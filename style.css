@@ -1,0 +1,250 @@
+.img{background-image: url("user/temp\ img.webp");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    left: 25%;
+    background-color: black;
+    color: white;
+  }
+  .scroller {
+    height: 1.2em;
+    margin-left: 100px;
+    margin-top: -47px;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 12em;
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 6s infinite;
+    font-weight: bold; 
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
+  .custom-shape-divider-top-1698513176 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.flat {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 42px black,10px 10px 30px #aeaec040;
+  }
+  .sm-1{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 42px #000000,10px 10px 30px #aeaec040;
+  }.sm-2 {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 42px #000000,10px 10px 30px #aeaec040;
+  }
+  #card-s{
+    -webkit-border-radius: 14px;
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 300px;
+border-radius: 14px;
+background: #D1D8EC;
+-webkit-box-shadow: 18px 18px 43px #999eac, -18px -18px 43px #ffffff;
+box-shadow: 18px 18px 43px #11151f, -18px -18px 43px #313131;
+  }
+#skills{
+  background: rgb(63,94,251); height: auto;
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  
+  right: -1px;
+  width: 20px;
+  height: 100%;
+
+  filter: blur(1px);
+  z-index: 1;
+}
+.box .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .content .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .content .percent::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 20px;
+  background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #030303;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.box .content .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.box .content .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 3;
+  stroke: rgba(0,0,0,0.05);
+  transform: translate(5px, 5px);
+}
+
+.box .content .percent svg circle:nth-child(2) {
+  stroke: #000000;
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box .content .percent .dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+
+.box .content .percent .dot::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #000000;
+  border-radius: 50%;
+}
+
+.box .content .number {
+  position: relative;
+  inset: 0;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.box .content .number h2 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.box .content .number h2 span {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+body {
+  background: black;
+}
+
+.progress {
+  --progress: 0%;
+  
+  width: 500px;
+  height: 50px;
+  margin: 9em auto;
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.progress .bar {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(gold, #c85, gold);
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px orange;
+  animation: 
+    shine 1s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 1s ease 1s;
+}
+
+@property --progress {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 50px; }
+}
+
+@keyframes end {
+  0%, 100% { box-shadow: 0 0 10px 0px orange; }
+  50% { box-shadow: 0 0 15px 5px orange; }
+}
