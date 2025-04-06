@@ -194,7 +194,7 @@ section {
     content: "";
     background-color: black;
     position: absolute;
-    width: calc(80% + 8px);
+    width: calc(70% + 8px);
     height: 100%;
     border-left: 3px solid black;
     right: -8;
@@ -208,7 +208,7 @@ section {
 }
 
 @keyframes words {
-    0%, 25% { content: "Web Developer"; }
+    0%, 25% { content: "Cyber Enthusiast"; }
     26%, 50% { content: "Developer"; }
     51%, 75% { content: "Cyber Enthusiast"; }
     76%, 100% { content: "Gamer"; }
