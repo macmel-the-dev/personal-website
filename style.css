@@ -194,7 +194,7 @@ section {
     content: "";
     background-color: black;
     position: absolute;
-    width: calc(70%);
+    width: calc(75%);
     height: 100%;
     border-left: 3px solid black;
     right: -8;
